@@ -1,3 +1,11 @@
+/*给所有的a添加样式*/
+a:link,a:visited,a:hover,a:active{
+   text-decoration: none;
+}
+*{
+    margin:0;
+    padding: 0;
+}
 .body_bg{
     background:#222D32;
 }
@@ -9,4 +17,113 @@
 }
 .mt-150{
     margin-top:150px;
+}
+.red{
+    color:#c12e2a;
+}
+
+/*左边侧边栏样式*/
+.lt_aside{
+    position:fixed;
+    left:0;
+    top:0;
+    width:180px;
+    height:100%;
+    background: #222D32;
+    z-index: 999;
+    transition:all 1s;
+}
+.lt_aside.hidemenu{
+    left:-180px;
+}
+.lt_aside .title{
+    width:180px;
+    height:50px;
+    line-height: 50px;
+    background:#2e6da4;
+    font-size: 24px;
+    color:white;
+    text-align: center;
+}
+.lt_aside .user{
+    height:180px;
+    padding-top:20px;
+}
+.lt_aside .user img{
+   width:80px;
+   height:80px;
+   display:block;
+   margin:0 auto;
+    border-radius: 50%;
+}
+.lt_aside .user p{
+    color:white;
+    text-align: center;
+    margin-top:10px;
+}
+.lt_aside .nav ul{
+    list-style: none;
+}
+.lt_aside .nav li a{
+    display:block;
+    width:100%;
+    height:40px;
+    line-height: 40px;
+    color:white;
+    padding-left: 50px;
+    border-left:3px solid transparent;
+}
+.lt_aside .nav span{
+    padding-left: 5px;
+}
+.lt_aside .nav .level a{
+    padding-left:70px;
+}
+/*高亮样式*/
+.lt_aside .nav a.current{
+    background: #1D1F21;
+    border-left:3px solid #006699;
+}
+
+/*右侧主体样式*/
+.lt_topbar{
+    position: fixed;
+    top:0;
+    left:0;
+    height:50px;
+    width:100%;
+    background:#5bc0de;
+    padding-left:180px;
+    transition:all 1s;
+    z-index: 666;
+}
+.lt_topbar.hidemenu{
+    padding-left:0;
+}
+.lt_topbar a{
+    width:50px;
+    height:50px;
+    line-height: 50px;
+    text-align: center;
+    color:white;
+    font-size: 24px;
+}
+.lt_main{
+    padding-left:180px;
+    padding-top:50px;
+    transition:all 1s;
+}
+.lt_main.hidemenu{
+    padding-left:0;
+}
+.lt_main .container-fluid{
+    margin-top:20px;
+    height:1000px;
+}
+
+/*echarts的样式*/
+.echarts_1,.echarts_2{
+    width:48%;
+    height:400px;
+    background: skyblue;
 }

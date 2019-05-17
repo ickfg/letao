@@ -28,6 +28,10 @@ a:link,a:visited,a:hover,a:active{
     vertical-align: center;
 }
 
+.mb_20{
+    margin-bottom: 20px;
+}
+
 /*左边侧边栏样式*/
 .lt_aside{
     position:fixed;

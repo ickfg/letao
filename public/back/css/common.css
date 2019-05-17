@@ -21,6 +21,12 @@ a:link,a:visited,a:hover,a:active{
 .red{
     color:#c12e2a;
 }
+/*给表格添加样式*/
+.table.table-bordered tr th,.table.table-bordered tr td{
+    text-align: center;
+    /*给表格添加垂直样式*/
+    vertical-align: center;
+}
 
 /*左边侧边栏样式*/
 .lt_aside{
@@ -127,3 +133,4 @@ a:link,a:visited,a:hover,a:active{
     height:400px;
     background: skyblue;
 }
+
